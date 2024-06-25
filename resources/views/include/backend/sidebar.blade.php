@@ -13,6 +13,13 @@
     <div class="sidebar-nav">
         <!--navigation-->
         <ul class="metismenu" id="sidenav">
+          
+            <a href="{{route('home')}}">
+              <div class="parent-icon"><i class="material-icons-outlined">support</i>
+              </div>
+              <div class="menu-title">ACL</div>
+            </a>
+
           <li>
             <a href="javascript:;" class="has-arrow">
               <div class="parent-icon"><i class="material-icons-outlined">home</i>
