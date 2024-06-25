@@ -14,7 +14,7 @@
         <!--navigation-->
         <ul class="metismenu" id="sidenav">
           
-            <a href="{{route('home')}}">
+            <a href="{{route('user.index')}}">
               <div class="parent-icon"><i class="material-icons-outlined">support</i>
               </div>
               <div class="menu-title">ACL</div>

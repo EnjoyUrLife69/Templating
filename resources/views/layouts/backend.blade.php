@@ -47,9 +47,6 @@
         <div class="row">
           @yield('content')
         </div>
-
-
-
     </div>
   </main>
   <!--end main wrapper-->

@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Middleware\isAdmin;
 use Illuminate\Http\Request;
-use App\Http\Middleware\IsAdmin;
 
 class UserController extends Controller
 {
@@ -14,7 +14,7 @@ class UserController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth',  [isAdmin::class]);
+        $this->middleware(['auth', isAdmin::class]);
     }
 
     /**
@@ -24,7 +24,7 @@ class UserController extends Controller
      */
     public function index()
     {
-        //
+        return view('user.index');
     }
 
     /**

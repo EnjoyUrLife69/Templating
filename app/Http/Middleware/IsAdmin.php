@@ -6,7 +6,7 @@ use Auth;
 use Closure;
 use Illuminate\Http\Request;
 
-class IsAdmin
+class isAdmin
 {
     /**
      * Handle an incoming request.
@@ -18,7 +18,7 @@ class IsAdmin
     public function handle(Request $request, Closure $next)
     {
         if (Auth::user()->isAdmin) {
-            return redirect('home');
+            return $next($request);
         }
         return abort(403);
     }
