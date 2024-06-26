@@ -13,6 +13,12 @@
     <div class="sidebar-nav">
         <!--navigation-->
         <ul class="metismenu" id="sidenav">
+
+          <a href="{{route('home')}}">
+              <div class="parent-icon"><i class="material-icons-outlined">home</i>
+              </div>
+              <div class="menu-title">Dashboard</div>
+            </a>
           
             <a href="{{route('user.index')}}">
               <div class="parent-icon"><i class="material-icons-outlined">support</i>
@@ -22,9 +28,9 @@
 
           <li>
             <a href="javascript:;" class="has-arrow">
-              <div class="parent-icon"><i class="material-icons-outlined">home</i>
+              <div class="parent-icon"><i class="material-icons-outlined">apple</i>
               </div>
-              <div class="menu-title">Dashboard</div>
+              <div class="menu-title">Data</div>
             </a>
             <ul>
               <li><a href="index.html"><i class="material-icons-outlined">arrow_right</i>Halaman Data 1</a>

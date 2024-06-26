@@ -23,7 +23,7 @@ Auth::routes(
 
 );
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/dashboard', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::group(['prefix' => 'admin', 'middleware' => ['auth', IsAdmin::class]], function () {
     Route::get('/', function () {
@@ -32,6 +32,6 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', IsAdmin::class]], fu
     // untuk Route Backend Lainnya
 });
 
-Route::group(['prefix' => 'admin', 'middleware' => ['auth', IsAdmin::class]], function () {
+Route::group(['prefix' => 'dashboard', 'middleware' => ['auth', IsAdmin::class]], function () {
     Route::resource('user', UserController::class)->middleware(IsAdmin::class);
 });
