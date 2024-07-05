@@ -33,9 +33,13 @@
               <div class="menu-title">Data</div>
             </a>
             <ul>
-              <li><a href="index.html"><i class="material-icons-outlined">arrow_right</i>Halaman Data 1</a>
+              <li><a href="#"><i class="material-icons-outlined">arrow_right</i>Artikel</a>
               </li>
-              <li><a href="index2.html"><i class="material-icons-outlined">arrow_right</i>Halaman Data 2</a>
+              <li><a href="{{route ("kategori.index")}}"><i class="material-icons-outlined">arrow_right</i>Kategori</a>
+              </li>
+              <li><a href="#"><i class="material-icons-outlined">arrow_right</i>Testimoni</a>
+              </li>
+              <li><a href="#"><i class="material-icons-outlined">arrow_right</i>Pendaftar</a>
               </li>
             </ul>
           </li>
